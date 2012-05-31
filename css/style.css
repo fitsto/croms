@@ -14,9 +14,9 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 
-a { color: #00e; }
+/*a { color: #00e; }
 a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a:hover { color: #06e; }*/
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 
@@ -101,6 +101,12 @@ body{
   -o-animation: imageAnimation 36s linear infinite 0s;
   -ms-animation: imageAnimation 36s linear infinite 0s;
   animation: imageAnimation 36s linear infinite 0s;*/
+}
+
+nav{
+  width:200px;
+  float: left;
+
 }
 
 .cb-slideshow,
@@ -236,6 +242,69 @@ body{
 
 #main-container{
   height:60%;
+  margin-top: 20px;
+}
+
+.gradient_borde_menu{
+  background: rgb(156,156,156); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(156,156,156,1) 1%, rgba(0,0,0,1) 65%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(156,156,156,1)), color-stop(65%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(156,156,156,1) 1%,rgba(0,0,0,1) 65%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(156,156,156,1) 1%,rgba(0,0,0,1) 65%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(156,156,156,1) 1%,rgba(0,0,0,1) 65%); /* IE10+ */
+  background: linear-gradient(top,  rgba(156,156,156,1) 1%,rgba(0,0,0,1) 65%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c9c9c', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 3px 3px 4px 3px;
+  -moz-transform: skew(-20deg, 0deg);
+  -webkit-transform: skew(-20deg, 0deg);
+  -o-transform: skew(-20deg, 0deg);
+  -ms-transform: skew(-20deg, 0deg);
+  transform: skew(-20deg, 0deg);
+}
+
+.img_menu{
+  background: transparent url(../img/fb.png) repeat top left;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.gradient_menu{
+  background: -moz-linear-gradient(top,  rgba(29,29,29,0) 0%, rgba(46,23,23,0) 20%, rgba(97,4,4,0.9) 79%, rgba(99,3,3,0.9) 81%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(29,29,29,0)), color-stop(20%,rgba(46,23,23,0)), color-stop(79%,rgba(97,4,4,0.9)), color-stop(81%,rgba(99,3,3,0.9))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(29,29,29,0) 0%,rgba(46,23,23,0) 20%,rgba(97,4,4,0.9) 79%,rgba(99,3,3,0.9) 81%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(29,29,29,0) 0%,rgba(46,23,23,0) 20%,rgba(97,4,4,0.9) 79%,rgba(99,3,3,0.9) 81%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(29,29,29,0) 0%,rgba(46,23,23,0) 20%,rgba(97,4,4,0.9) 79%,rgba(99,3,3,0.9) 81%); /* IE10+ */
+  background: linear-gradient(top,  rgba(29,29,29,0) 0%,rgba(46,23,23,0) 20%,rgba(97,4,4,0.9) 79%,rgba(99,3,3,0.9) 81%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001d1d1d', endColorstr='#e6630303',GradientType=0 ); /* IE6-9 */
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+nav li{
+  margin: 7px 0px;      
+}
+
+nav li:hover{
+        -moz-transform: scale(0.97) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+    -webkit-transform: scale(0.97) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+        -o-transform: scale(0.97) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+        -ms-transform: scale(0.97) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+        transform: scale(0.97) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+        text-shadow: 0px 0px 15px #fff;
+        
+}
+
+nav li a{
+  display:block;
+  text-decoration:none;
+  color: #fff;
+  text-transform: uppercase;
+  -moz-transform: skew(20deg, 0deg);
+  -webkit-transform: skew(30deg, 0deg);
+  -o-transform: skew(20deg, 0deg);
+  -ms-transform: skew(20deg, 0deg);
+  transform: skew(20deg, 0deg);
 }
 #footer-container{
   height:20%;
@@ -380,7 +449,17 @@ body{
 /* =============================================================================
    Media Queries
    ========================================================================== */
+@media only screen and (max-width: 480px) {
+  #redes_sociales{
+    display: none;
+  }
+}
 
+@media only screen and (max-width: 768px){
+  #redes_sociales{
+    display: none;
+  }
+}
 
 @media only screen and (min-width: 1140px) {
 
