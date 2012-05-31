@@ -70,6 +70,21 @@ td { vertical-align: top; }
 
 
 
+
+
+/* =============================================================================
+   cargamos la fuente
+   ========================================================================== */
+@font-face {
+    font-family: 'BulletRegular';
+    src: url('../fonts/bullet-regular.eot') format('embedded-opentype'),
+         url('../fonts/bullet-regular.woff') format('woff'),
+         url('../fonts/bullet-regular.ttf') format('truetype'),
+         url('../fonts/bullet-regular.svg') format('svg');
+    /*font-weight: normal;
+    font-style: normal;*/
+}
+
 /* ===== Primary Styles ========================================================
    Author:
    ========================================================================== */
@@ -128,6 +143,104 @@ body{
   opacity: 1;
 }
 
+.container{
+  color: #fff;
+  font-family: 'BulletRegular', 'Arial Narrow', Arial, sans-serif;
+  height: auto;
+  min-height:100px;
+  position: relative;
+  text-align: center;
+}
+
+#contenedor-general{
+  height: auto;
+}
+
+#header-container{
+  height:20%;
+  margin-top: 20px;
+}
+
+#logo{
+  float: left;
+}
+
+#redes_sociales{
+  background: -moz-linear-gradient(top,  rgba(29,29,29,0.9) 0%, rgba(110,110,110,0.9) 61%, rgba(108,108,108,0.9) 62%, rgba(29,29,29,0.9) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(29,29,29,0.9)), color-stop(61%,rgba(110,110,110,0.9)), color-stop(62%,rgba(108,108,108,0.9)), color-stop(100%,rgba(29,29,29,0.9))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(29,29,29,0.9) 0%,rgba(110,110,110,0.9) 61%,rgba(108,108,108,0.9) 62%,rgba(29,29,29,0.9) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(29,29,29,0.9) 0%,rgba(110,110,110,0.9) 61%,rgba(108,108,108,0.9) 62%,rgba(29,29,29,0.9) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(29,29,29,0.9) 0%,rgba(110,110,110,0.9) 61%,rgba(108,108,108,0.9) 62%,rgba(29,29,29,0.9) 100%); /* IE10+ */
+  background: linear-gradient(top,  rgba(29,29,29,0.9) 0%,rgba(110,110,110,0.9) 61%,rgba(108,108,108,0.9) 62%,rgba(29,29,29,0.9) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e61d1d1d', endColorstr='#e61d1d1d',GradientType=0 ); /* IE6-9 */
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  float: right;
+  height:100px;
+  padding: 10px 10px;
+  width:250px;
+}
+
+#redes_sociales span{
+  font-size:1.5em;
+  text-align: center;
+}
+
+#iconos_redes_sociales{
+  margin: 10px 5px;
+}
+
+#iconos_redes_sociales img{
+  height: 37px;
+  width: 36px;
+  background-image: url("../img/redes-sociales.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 3px;
+}
+
+#icon_youtube{
+  background-position: 0px -37px;
+}
+
+#icon_youtube:hover{
+  background-position: 0px 0px;
+}
+
+#icon_facebook{
+  background-position: -36px -37px;
+}
+
+#icon_facebook:hover{
+  background-position: -36px 0px;
+}
+
+#icon_twitter{
+  background-position: -72px -37px;
+}
+
+#icon_twitter:hover{
+  background-position: -72px 0px;
+}
+
+#icon_flickr{
+  background-position: -108px -37px;
+}
+
+#icon_flickr:hover{
+  background-position: -108px 0px;
+}
+
+#main-container{
+  height:60%;
+}
+#footer-container{
+  height:20%;
+}
+
 .wrapper{
   width:90%;
   margin:0 5%;
@@ -146,11 +259,11 @@ body{
   0% {
       opacity: 1;
       -webkit-transform: scale(1.1);
-      -webkit-animation-timing-function: ease-in;
+      /*-webkit-animation-timing-function: ease-in;*/
   }
   25% {
       opacity: 1;
-      -webkit-transform: scale(1.2) rotate(1.5deg);
+      -webkit-transform: scale(1.2) rotate(2deg);
   }
   50% {
       opacity: 1;
@@ -158,12 +271,12 @@ body{
   }
   75% {
       opacity: 1;
-      -webkit-transform: scale(1.2) rotate(-1.5deg);
+      -webkit-transform: scale(1.2) rotate(-2deg);
   }
   100% {
       opacity: 1;
       -webkit-transform: scale(1.1) ;
-      -webkit-animation-timing-function: ease-out;
+      /*-webkit-animation-timing-function: ease-out;*/
   }
 }
 @-moz-keyframes imageAnimation { 
